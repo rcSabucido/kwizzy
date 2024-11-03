@@ -1,5 +1,6 @@
 export interface Quiz {
-    id: string;
+    _id?: string;
+    id?: string;
     name: string;
     questions: QuizQuestion[];
 }

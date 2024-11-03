@@ -41,6 +41,10 @@ func (s QuizService) UpdateQuiz(id primitive.ObjectID, name string, questions []
 	return s.quizCollection.UpdateQuiz(*quiz)
 }
 
+func (s QuizService) DeleteQuizById(id primitive.ObjectID) error {
+	return s.quizCollection.DeleteQuizById(id)
+}
+
 func (s QuizService) GetQuizzes() ([]entity.Quiz, error) {
 	return s.quizCollection.GetQuizzes()
 }

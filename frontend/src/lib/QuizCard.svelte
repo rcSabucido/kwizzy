@@ -15,6 +15,10 @@
     function edit() {
         push(`/edit/${quiz.id}`);
     }
+
+    function deleteQuiz() {
+        dispatch("delete", quiz);
+    }
 </script>
 
 <div class="flex justify-between items-center bg-white border-2 border-blue-300 p-4 rounded-xl">
@@ -22,5 +26,6 @@
     <div class="flex-gap-2 items-center">
         <Button on:click={host}>Host</Button>
         <Button on:click={edit}>Edit</Button>
+        <Button on:click={deleteQuiz}>Delete</Button>
     </div>
 </div>

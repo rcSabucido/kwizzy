@@ -52,6 +52,22 @@ export class ApiService {
             return;
         }
     }
+
+    async deleteQuiz(quizId: string): Promise<boolean>{
+        let response = await fetch(`http://localhost:3000/api/quizzes/${quizId}`, {
+            method: "DELETE",
+            headers: {
+                "Content-Type": "application/json"
+            }
+        });
+
+        if (!response.ok) {
+            alert("Failed to delete quiz!");
+            return false;
+        }
+
+        return true;
+    }
 }
 
 export const apiService = new ApiService();

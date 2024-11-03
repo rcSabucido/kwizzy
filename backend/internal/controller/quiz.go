@@ -93,3 +93,18 @@ func (c QuizController) UpdateQuizById(ctx *fiber.Ctx) error {
 
 	return ctx.SendStatus(fiber.StatusOK)
 }
+
+func (c QuizController) DeleteQuizById(ctx *fiber.Ctx) error {
+	quizIdStr := ctx.Params("quizId")
+	quizId, err := primitive.ObjectIDFromHex(quizIdStr)
+	if err != nil {
+		return ctx.SendStatus(fiber.StatusBadRequest)
+	}
+
+	err = c.quizService.DeleteQuizById(quizId)
+	if err != nil {
+		return err
+	}
+
+	return ctx.SendStatus(fiber.StatusOK)
+}
