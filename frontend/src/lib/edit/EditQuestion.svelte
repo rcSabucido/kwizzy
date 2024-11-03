@@ -54,35 +54,22 @@
 						class="w-[70%] text-base p-2 bg-purple-500 text-center text-white"
 					/>
 				</Clock>
-				<!-- Image Container -->
-				<div class="w-[500px] mx-auto">
-					<input
-						type="text"
-						class="w-full p-2 mb-2 bg-purple-500 text-white text-center rounded-t-md"
-						placeholder="Image Path"
-						bind:value={selectedQuestion.imagePath}
-						on:change={onImagePathChange}
-					/>
-					<img
-						alt=""
-						src={selectedQuestion.imagePath}
-						class="w-full h-[300px] object-contain border rounded-md bg-gray-50"
-					/>
-				</div>
-
-				 <!-- <img
-                    alt="user question"
-                    src={selectedQuestion.imagePath}
-                    class="max-w-[500px] max-h-[300px] object-contain "
-                />
-                <input
-                    type="text"
-                    class="w-full md:w-auto text-base p-2 bg-purple-500 text-center text-white rounded-md"
-                    placeholder="Image Path"
-                    bind:value={selectedQuestion.imagePath}
-                    on:change={onImagePathChange}
-                /> -->
-
+				 <div class="flex-1 flex justify-center mr-32">
+					<div class="w-[500px] mx-auto">
+						<input
+							type="text"
+							class="w-full p-2 mb-2 bg-purple-500 text-white text-center rounded-t-md"
+							placeholder="Image Path"
+							bind:value={selectedQuestion.imagePath}
+							on:change={onImagePathChange}
+						/>
+						<img
+							alt=""
+							src={selectedQuestion.imagePath}
+							class="w-full h-[300px] object-contain border rounded-md bg-gray-50"
+						/>
+					</div>
+				 </div>
 			</div>
 		</div>
 		<div class="flex flex-wrap w-full h-96">

@@ -34,7 +34,7 @@
                 <img
                     src="{$currentQuestion.imagePath}"
                     alt="center"
-                    class="max-w-[500px]"
+                    class="max-w-[300px]"
                 />
                 {/if}
                 <div class="w-24"></div>
