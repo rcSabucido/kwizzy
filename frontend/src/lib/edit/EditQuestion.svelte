@@ -3,7 +3,7 @@
     import { COLORS, type QuizQuestion } from "../../model/quiz";
     import Button from "../Button.svelte";
     import QuizChoiceCard from "../play/QuizChoiceCard.svelte";
-    import Clock from "/home/pedro/mmcm-repos/foss-kahoot/frontend/src/lib/Clock.svelte";
+    import Clock from "../Clock.svelte";
 
     const dispatch = createEventDispatcher();
 

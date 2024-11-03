@@ -1,5 +1,5 @@
 <script lang="ts">
-    import QuizChoiceCard from '/home/pedro/mmcm-repos/foss-kahoot/frontend/src/lib/play/QuizChoiceCard.svelte';
+    import QuizChoiceCard from '../../lib/play/QuizChoiceCard.svelte';
     import { type HostGame, tick, currentQuestion, state } from '../../service/host/host';
     import { COLORS, type QuizChoice } from '../../model/quiz';
     import { GameState } from '../../service/net';
