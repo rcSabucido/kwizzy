@@ -17,6 +17,11 @@
         let target = e.target as HTMLInputElement;
         selectedQuestion.time = parseInt(target.value);
     }
+
+	function onImagePathChange(e: Event){
+        let target = e.target as HTMLInputElement;
+        selectedQuestion.imagePath = target.value;
+    }
 </script>
 
 <div class="hidden">
@@ -39,7 +44,7 @@
 		</div>
 
 		<div class="flex-1 flex flex-col justify-center pl-4">
-			<div class="flex justify-between items-center">
+			<div class="flex flex-col md:flex-row justify-between items-center gap-4">
 
 				<Clock>
 					<input
@@ -49,13 +54,34 @@
 						class="w-[70%] text-base p-2 bg-purple-500 text-center text-white"
 					/>
 				</Clock>
-				<img
-					src="https://placehold.co/500x250"
-					alt="center"
-					class="max-w-[500px]"
-				/>
+				<!-- Image Container -->
+				<div class="w-[500px] mx-auto">
+					<input
+						type="text"
+						class="w-full p-2 mb-2 bg-purple-500 text-white text-center rounded-t-md"
+						placeholder="Image Path"
+						bind:value={selectedQuestion.imagePath}
+						on:change={onImagePathChange}
+					/>
+					<img
+						alt=""
+						src={selectedQuestion.imagePath}
+						class="w-full h-[300px] object-contain border rounded-md bg-gray-50"
+					/>
+				</div>
 
-				<div class="w-24"></div>
+				 <!-- <img
+                    alt="user question"
+                    src={selectedQuestion.imagePath}
+                    class="max-w-[500px] max-h-[300px] object-contain "
+                />
+                <input
+                    type="text"
+                    class="w-full md:w-auto text-base p-2 bg-purple-500 text-center text-white rounded-md"
+                    placeholder="Image Path"
+                    bind:value={selectedQuestion.imagePath}
+                    on:change={onImagePathChange}
+                /> -->
 
 			</div>
 		</div>

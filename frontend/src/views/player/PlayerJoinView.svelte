@@ -16,7 +16,6 @@
 </script>
 
 
-
 <div class="bg-purple-500 min-h-screen w-full flex items-center justify-center">
     <div>
         <h2 class="text-white font-bold text-5xl text-center"> Quiz </h2>

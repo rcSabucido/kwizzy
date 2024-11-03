@@ -15,6 +15,7 @@ export interface QuizQuestion {
     name: string;
     time: number;
     choices: QuizChoice[];
+    imagePath?: string;
 }
 
 export interface QuizChoice {

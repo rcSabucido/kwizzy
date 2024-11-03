@@ -18,6 +18,7 @@
 <div class="hidden">
     <div class="bg-pink-400"></div>
     <div class="bg-yellow-400"></div>
+    <div class="bg-purple-400"></div>
 </div>
 {#if $currentQuestion != null}
     <div class="min-h-screen h-screen flex flex-col">
@@ -29,10 +30,13 @@
                 <Clock>
                     <span class="text-3xl">{$tick}</span>
                 </Clock>
+                {#if $currentQuestion.imagePath}
                 <img
+                    src="{$currentQuestion.imagePath}"
                     alt="center"
                     class="max-w-[500px]"
                 />
+                {/if}
                 <div class="w-24"></div>
             </div>
         </div>
