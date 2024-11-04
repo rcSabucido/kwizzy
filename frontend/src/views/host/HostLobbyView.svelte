@@ -10,13 +10,21 @@
     }
 </script>
 
-<div class="p-8 bg-purple-500 min-h-screen w-full">
+<style>
+    .custom-font {
+        font-family: 'Boorsok', sans-serif;
+    }
+</style>
+
+<div class="p-8  min-h-screen w-full" style="background-color: #3a5dc4;">
     <div class="flex justify-end">
-        <Button on:click={start}>Start game</Button>
+        <button on:click={start} class="bg-amber-300 hover:bg-amber-400 text-black font-bold  rounded-3xl px-5 py-2"> Join Game </button>
+        
+        <!-- <Button on:click={start}>Start game</Button> -->
     </div>
     <div class="text-center text-white">
-        <h2 class="text-4xl">Join with game code</h2>
-        <h2 class="text-6xl font-bold mt-4">{$gameCode}</h2>
+        <h2 class="text-6xl font-bold custom-font">Join with game code</h2>
+        <h2 class="text-7xl font-bold custom-font mt-6">{$gameCode}</h2>
     </div>
     <h2 class="mt-10 text-white text-4xl font-bold">
         Players ({$players.length})
