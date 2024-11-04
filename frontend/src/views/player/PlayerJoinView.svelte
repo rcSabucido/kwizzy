@@ -15,10 +15,16 @@
     }
 </script>
 
+<style>
+    .custom-font {
+        font-family: 'Boorsok', sans-serif;
+    }
+</style>
 
-<div class="bg-purple-500 min-h-screen w-full flex items-center justify-center">
+
+<div class="bg-purple-500 Times min-h-screen w-full flex items-center justify-center">
     <div>
-        <h2 class="text-white font-bold text-5xl text-center"> Quiz </h2>
+        <h2 class="text-white font-bold text-5xl text-center custom-font"> KWIZZY </h2>
         <div class="flex flex-col gap-2 mt-10 items-center">
             <input bind:value={code} type="text" class="p-2 rounded" placeholder="Game code" />
             <input bind:value={name} type="text" class="p-2 rounded" placeholder="Name" />
