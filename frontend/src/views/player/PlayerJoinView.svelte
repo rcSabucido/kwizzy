@@ -17,18 +17,18 @@
 
 <style>
     .custom-font {
-        font-family: 'Boorsok', sans-serif;
+        font-family: 'Wedges', sans-serif;
     }
 </style>
 
 
-<div class="bg-purple-500 Times min-h-screen w-full flex items-center justify-center">
+<div class="bg-blue-500 Times min-h-screen w-full flex items-center justify-center">
     <div>
-        <h2 class="text-white font-bold text-5xl text-center custom-font"> KWIZZY </h2>
+        <h2 class="text-white font-bold text-8xl text-center custom-font"> KWIZZY </h2>
         <div class="flex flex-col gap-2 mt-10 items-center">
-            <input bind:value={code} type="text" class="p-2 rounded" placeholder="Game code" />
-            <input bind:value={name} type="text" class="p-2 rounded" placeholder="Name" />
-            <Button on:click={join}>Join Game</Button>
+            <input bind:value={code} type="text" class="p-2 rounded-full text-center" placeholder="Game Code" />
+            <input bind:value={name} type="text" class="p-2 rounded-full text-center" placeholder="Name" />
+            <button on:click={join} class="bg-amber-300 hover:bg-amber-400 text-black font-bold mt-2 rounded px-2 py-2"> Join Game </button>
         </div>
     </div>
 
