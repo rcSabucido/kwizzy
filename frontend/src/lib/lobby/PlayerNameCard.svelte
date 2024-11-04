@@ -6,8 +6,7 @@
 
 <button on:click>
     <h3
-        class="text-3xl text-white px-4 py-2 rounded-xl hover:line-through"
-        style="background-color: rgba(33, 33, 33, 0.3);"
+        class="text-3xl bg-amber-300 text-black px-4 py-2 rounded-xl hover:line-through"
     >
         {player.name}
     </h3>
