@@ -58,7 +58,7 @@
 					<div class="w-[500px] mx-auto">
 						<input
 							type="text"
-							class="w-full p-2 mb-2 bg-purple-500 text-white text-center rounded-t-md"
+							class="w-full p-2 mb-2 bg-blue-500 text-white text-center rounded-t-md"
 							placeholder="Image Path"
 							bind:value={selectedQuestion.imagePath}
 							on:change={onImagePathChange}

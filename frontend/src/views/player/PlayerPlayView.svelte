@@ -17,7 +17,7 @@
     });
 </script>
 
-<div class="flex flex-wrap w-full min-h-screen">
+<div class="flex flex-wrap w-full min-h-screen p-2">
     {#if !answered}
         {#each COLORS as color, i}
         <QuizChoiceCard {color}>

@@ -24,4 +24,4 @@ export interface QuizChoice {
     correct: boolean;
 }
 
-export const COLORS = ["bg-pink-400", "bg-blue-400", "bg-yellow-400", "bg-purple-400"];
+export const COLORS = ["bg-sky-400", "bg-indigo-500", "bg-yellow-400", "bg-rose-500"];

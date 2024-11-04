@@ -16,9 +16,10 @@
 </script>
 
 <div class="hidden">
-    <div class="bg-pink-400"></div>
+    <div class="bg-sky-400"></div>
+    <div class="bg-indigo-500"></div>
+    <div class="bg-rose-500"></div>
     <div class="bg-yellow-400"></div>
-    <div class="bg-purple-400"></div>
 </div>
 {#if $currentQuestion != null}
     <div class="min-h-screen h-screen flex flex-col">
