@@ -11,7 +11,12 @@
     let game = new HostGame();
 
     function onHost(event: {detail: Quiz}){
-        game.hostQuiz(event.detail.id);
+        const quizId = event.detail.id || event.detail._id;
+        if (quizId) {
+            game.hostQuiz(quizId);
+        } else {
+            console.error("Quiz ID not found");
+        }
     }
 
     let views: Record<GameState, any> = {
