@@ -7,11 +7,11 @@
     const finishColors = ["bg-yellow-500", "bg-[silver]", "bg-yellow-700"];
 </script>
 
-<div class=" bg-purple-600 flex rounded-xl p-4 flex-col gap-4 w-96">
-    <h2 class="text-white text-center text-3xl">Leaderboard</h2>
+<div class=" bg-slate-50 flex rounded-xl p-4 flex-col gap-4 w-96">
+    <h2 class="text-black font-bold text-center text-3xl">Leaderboard</h2>
     {#each leaderboard as entry, i}
         <div
-            class="bg-purple-500 text-white p-2 text-2xl rounded-xl flex items-center gap-6"
+            class="bg-slate-300 font-bold text-black p-2 text-2xl rounded-xl flex items-center gap-6"
         >
             {#if finish}
                 <div

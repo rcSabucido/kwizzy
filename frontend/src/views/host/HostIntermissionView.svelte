@@ -10,7 +10,8 @@
     }
 </script>
 
-<div class="bg-purple-500 min-h-screen w-full">
+<div class=" min-h-screen w-full"
+     style="background-color: #2a4674;">
     <div class="flex justify-end p-8">
         <Button on:click={skip}>Skip</Button>
     </div>
