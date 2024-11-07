@@ -29,21 +29,25 @@
         background-image: url('/assets/cloud.png');
         background-size: contain;
         background-repeat: no-repeat;
-        width: 100px; /* Adjust the size as needed */
-        height: 1000px;
+        width: 200px; /* Adjust the size as needed */
+        height: 200px;
         position: absolute;
     }
     .cloud1 {
-        top: 20%;
-        left: 10%;
+        top: -15%;
+        left: -3%;
+        width: 300px;
+        height: 300px;
     }
     .cloud2 {
-        top: 30%;
-        right: 15%;
+        top: 11%;
+        right: 1%;
     }
     .cloud3 {
-        top: 50%;
-        left: 5%;
+        top: 45%;
+        left: -1%;
+        width: 500px;
+        height: 500px;
     }
     .cloud4 {
         top: 60%;
