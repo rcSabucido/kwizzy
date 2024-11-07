@@ -21,8 +21,14 @@
     }
 </script>
 
+<style>
+    .custom-font {
+        font-family: 'Boorsok', sans-serif;
+    }
+</style>
+
 <div class="flex justify-between items-center bg-white border-2 border-blue-300 p-4 rounded-xl">
-    <p>{quiz.name}</p>
+    <p class="custom-font text-xl   ">{quiz.name}</p>
     <div class="flex-gap-2 items-center">
         <Button on:click={host}>Host</Button>
         <Button on:click={edit}>Edit</Button>

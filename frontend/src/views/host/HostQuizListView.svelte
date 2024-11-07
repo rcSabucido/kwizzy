@@ -54,9 +54,18 @@ import type { Quiz } from '../../model/quiz';
     }
 </script>
 
-<div class="p-8">
-    <h1 class="text-2xl font-bold">Quizzes</h1>
-    <Button on:click={openModal}>Create New Quiz</Button>
+<style>
+    .custom-font {
+        font-family: 'Boorsok', sans-serif;
+    }
+</style>
+
+
+<div class="p-8 bg-sky-300 w-full min-h-screen">
+    <div class="flex justify-between items-center">
+        <h1 class="text-2xl font-bold custom-font">Your Quizzes</h1>
+        <Button on:click={openModal}>Create New Quiz</Button>
+    </div>
     <div class="flex flex-col gap-2 mt-4">
         {#each quizzes as quiz(quiz.id || quiz._id)}
             <QuizCard on:host on:delete={deleteQuiz} {quiz} />
