@@ -29,7 +29,7 @@
         background-image: url('/assets/cloud.png');
         background-size: contain;
         background-repeat: no-repeat;
-        width: 200px; /* Adjust the size as needed */
+        width: 200px;
         height: 200px;
         position: absolute;
     }
@@ -56,13 +56,11 @@
 </style>
 
 <div class="bg-blue-500 flex items-center justify-center">
-    <!-- Cloud elements -->
     <div class="cloud cloud1"></div>
     <div class="cloud cloud2"></div>
     <div class="cloud cloud3"></div>
     <div class="cloud cloud4"></div>
 
-    <!-- Main content -->
     <div>
         <h2 class="text-white font-bold text-8xl text-center custom-font"> KWIZZY </h2>
         <div class="flex flex-col gap-2 mt-10 items-center">
