@@ -250,16 +250,21 @@ func (g *Game) OnPlayerDisconnect(player *Player) {
 	})
 }
 
+// functional programming higher order
 func (g *Game) getAnsweredPlayers() []*Player {
-	players := []*Player{}
+    return filter(g.Players, func(p *Player) bool {
+        return p.Answered
+    })
+}
 
-	for _, player := range g.Players {
-		if player.Answered {
-			players = append(players, player)
-		}
-	}
-
-	return players
+func filter(players []*Player, predicate func(*Player) bool) []*Player {
+    var result []*Player
+    for _, player := range players {
+        if predicate(player) {
+            result = append(result, player)
+        }
+    }
+    return result
 }
 
 func (g *Game) getCurrentQuestion() entity.QuizQuestion {
